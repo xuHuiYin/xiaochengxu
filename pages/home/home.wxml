@@ -1,2 +1,17 @@
-<text>aaa</text>
-<button>aa</button>
+<text>{{num}}</text>
+<button size="mini" bindtap="_num">点击</button>
+<button
+  size="mini"
+  open-type="getUserInfo"
+  bindGetuserInfo="getuserInfo"
+  >
+  获取授权
+</button>
+<view>aaaasss</view>
+<view>aaaasss</view>
+<view>aaaasss</view>
+
+<view>aaaasss</view>
+<view>aaaasss</view>
+<view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view>
+<open-data type="userNickName"></open-data>

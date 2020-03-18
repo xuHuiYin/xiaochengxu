@@ -1,5 +1,31 @@
 {
-  "pages" :[
-    "pages/home/home"
-  ]
+  "pages": [
+    "pages/home/home",
+    "pages/about/about"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ff5777",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "小程序",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "text",
+        "iconPath": "assets/imgs/wo.png",
+        "selectedIconPath": "assets/imgs/wo_a.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "text",
+        "iconPath": "assets/imgs/chakan.png",
+        "selectedIconPath": "assets/imgs/chakan_a.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap54.json"
 }

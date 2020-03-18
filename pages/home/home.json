@@ -1,5 +1,4 @@
 {
-  "pages":[
-
-  ]
+  "navigationBarTitleText": "home",
+  "enablePullDownRefresh": true
 } 
