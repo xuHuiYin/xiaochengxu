@@ -1,0 +1,3 @@
+<template name="aaa">
+  <view>btn1 内容</view>
+</template>

@@ -1,0 +1,8 @@
+  var a = 'aaa';
+  var num = function(a1, a2){
+    return a1+a2
+  }
+  module.exports = {
+    a:a,
+    num:num
+  }

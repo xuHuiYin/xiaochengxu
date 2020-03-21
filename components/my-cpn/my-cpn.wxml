@@ -1,0 +1,31 @@
+<!--components/my-cpn/my-cpn.wxml-->
+<!-- <view class="contianer">
+  <block
+    wx:for="{{list}}" 
+    wx:key="index"
+  >
+    <view 
+      class="list_item {{active_index == index ? 'activea' : ''}}" 
+      bindtap="_active"
+      data-index="{{index}}"
+    >
+      <text>{{item}}</text>
+    </view>
+  </block>
+</view>
+<view>计数器{{num}}</view> -->
+
+<!-- 插槽 -->
+<!-- <view>头部</view>
+<slot/>
+<view>尾部</view> -->
+<view>开始</view>
+<slot name="slot1"/>
+<slot name="slot2"/>
+<slot name="slot3"/>
+<view>结尾</view>
+
+
+<!-- 
+<view class="a">{{title}}</view>
+<button bind:tap="addNum">+1</button> -->

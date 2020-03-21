@@ -1,2 +1,140 @@
+<!-- 多个插槽 
+	1 加name 属性 
+	2 在多插槽的js  options  设置 multipleSlots:true
+	-->
+<my-cpn>
+	<button slot="slot2">点击</button>
+	<slider slot="slot1" value="60"></slider>
+</my-cpn>
+
+
+<!-- 插槽 会替换 slot 标签 -->
+<!-- <my-cpn>
+	<button>点击</button>
+</my-cpn> -->
+
+<!-- 自定义组件 -->
+<!-- <my-cpn list="{{list}}" bind:itemClick="_itemClick" id="list_el"></my-cpn>
+<button bind:tap="clickUpdata">点击修改子组件数据</button> -->
+<!-- <my-cpn title="哈哈1" a="green"></my-cpn>
+<my-cpn bind:addNum="_addNum"></my-cpn>
+<view>当前计数{{num}}</view> -->
+<!-- 事件传参 -->
+<!-- <view class="container3">
+  <block wx:for="{{['a', 'b', 'c', 'd']}}" wx:key="index">
+    <view class="item3" bindtap="item3click" data-index="{{index}}" data-item="{{item}}">{{item}}</view>
+  </block>
+</view> -->
+
+
+<!-- 不能使用绝对路径，只能使用相对路径 -->
+<!-- <wxs src="../../wxs/info.wxs" module="info" />
+<view>{{info.a}}</view>
+<view>{{info.num(1, 2)}}</view> -->
+
+<!-- <wxs module="info">
+  var a = 'aaa';
+  var num = function(a1, a2){
+    return a1+a2
+  }
+  module.exports = {
+    a:a,
+    num:num
+  }
+</wxs>
+<view>{{info.a}}</view>
+<view>{{info.num(1, 2)}}</view> -->
+
 <!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<!-- <image src="../../assets/imgs/danjuchuli.png"/>
+<image src="/assets/imgs/danjuchuli.png"/>
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"/>
+
+
+<image 
+  src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+  wx:for="{{2}}"
+  bindload="_bindload"
+  lazy-load
+  />
+
+<image show-menu-by-longpress src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"/>
+<view wx:for="{{imageList}}">
+  <image src="{{item}}" mode="aspectFit"/>
+</view>
+<button bindtap="handleChooseAlbum">选中图片</button> -->
+<!-- <input type="text" confirm-type="send" bindinput="_bindinput"></input> -->
+
+<!-- <scroll-view class="container">
+  <view wx:for="{{10}}" class="item">{{item}}</view>
+</scroll-view> -->
+<!-- <scroll-view scroll-x class="_container">
+  <view class="container">
+    <view wx:for="{{10}}" wx:key="index" class="item">{{item}}</view>
+  </view>
+</scroll-view>
+
+<scroll-view scroll-y enable-flex class="container1" bindscroll="_bindscroll">
+  <view>
+    <view wx:for="{{10}}" wx:key="index" class="item1">{{item}}</view>
+  </view>
+</scroll-view> -->
+<!-- <map class="map" longitude="116.11" latitude="39.6"></map>
+<view>{{age >= 18 ? '成年人' : '未成年人'}}</view>
+<view>{{nowTime}}</view>
+<view class="box2 {{isactive ? 'active' : ''}}">haoaho</view>
+<button bindtap="toggleColor">切换颜色</button>
+<view class="box">哈哈</view>
+<view class="box1">哈哈</view> -->
+
+<!-- block 标签   view 组件   使用block包裹不影响性能 -->
+<!-- <block>
+  <view>aaa</view>
+</block> -->
+ 
+<!-- for itme index 别名 -->
+<!-- <view wx:for="{{['aa', 'bb']}}" wx:for-item="name" wx:for-index="i" wx:key="name">{{name}} {{i}}</view> -->
+
+
+<!-- <import src="/wxml/btn.wxml"/> -->
+<!-- <import src="../../wxml/btn.wxml"/> -->
+<!-- <template is="a" data="{{btntext:'警告', viewtext:'nihao'}}"></template> -->
+
+<!-- <view class="page__bd">
+		<view class="weui-search-bar {{inputShowed ? 'weui-search-bar_focusing' : ''}}" id="searchBar">
+			<form class="weui-search-bar__form">
+				<view class="weui-search-bar__box">
+					<i class="weui-icon-search"></i>
+                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <span class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput"></span>
+				</view>
+				<label class="weui-search-bar__label" bindtap="showInput">
+					<i class="weui-icon-search"></i>
+                    <span class="weui-search-bar__text">搜索</span>
+				</label>
+			</form>
+            <view class="weui-search-bar__cancel-btn" bindtap="hideInput">取消</view>
+		</view>
+		<view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+			<view class="weui-cell weui-cell_active weui-cell_access">
+				<view class="weui-cell__bd weui-cell_primary">
+					<view>实时搜索文本</view>
+				</view>
+			</view>
+			<view class="weui-cell weui-cell_active weui-cell_access">
+				<view class="weui-cell__bd weui-cell_primary">
+					<view>实时搜索文本</view>
+				</view>
+			</view>
+			<view class="weui-cell weui-cell_active weui-cell_access">
+				<view class="weui-cell__bd weui-cell_primary">
+					<view>实时搜索文本</view>
+				</view>
+			</view>
+			<view class="weui-cell weui-cell_active weui-cell_access">
+				<view class="weui-cell__bd weui-cell_primary">
+					<view>实时搜索文本</view>
+				</view>
+			</view>
+		</view>
+	</view> -->

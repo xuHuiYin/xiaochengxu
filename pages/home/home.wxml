@@ -1,5 +1,7 @@
-<text>{{num}}</text>
 <button size="mini" bindtap="_num">点击</button>
+<!-- <text>{{num}}</text>
+<button size="mini" bindtap="_num">点击</button>
+<text selectable="{{true}}">你好</text>
 <button
   size="mini"
   open-type="getUserInfo"
@@ -7,11 +9,31 @@
   >
   获取授权
 </button>
-<view>aaaasss</view>
-<view>aaaasss</view>
-<view>aaaasss</view>
 
-<view>aaaasss</view>
-<view>aaaasss</view>
-<view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view><view>aaaasss</view>
-<open-data type="userNickName"></open-data>
+<open-data type="userNickName"></open-data> -->
+
+<!-- <button bind:tap="showToast">show toast</button>
+
+<button bind:tap="showmodal">show modal</button>
+<button bind:tap="showloading">show loading</button>
+<button bind:tap="showActionSheet">show ActionSheet</button>
+<button open-type="share">分享</button> -->
+
+<!-- 跳转 
+redirect:关闭当前页面，跳转某个页面，不允许跳到tabbar页面，并且不能返回
+switchTab：跳到tabbar 页面 关闭其他非tabbar页面 （需要在tabbar定义）
+reLaunch:关闭所有页面，打开应用中某个页面（直接展示某个页面，并且可以跳转到tabbar页面）
+跳转传递数据   a -> b	/a/b？a=b&c=d
+接受数据 onLoad:fcuntion(options){console.log(options)}
+返回传递数据   d -> a
+onUnload(){  //关闭页面回调函数
+	const pages = getCurrentPages()  //当前所有栈的页面
+	const a = pages[pages.length - 2]
+	
+	a.setData({
+		title:’呵呵呵‘
+	})
+}
+-->
+<navigator url="/pages/a/a">跳到a</navigator>
+<button></button>

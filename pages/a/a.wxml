@@ -1,0 +1,6 @@
+<!--pages/a/a.wxml-->
+<text>pages/a/a.wxml</text>
+<navigator open-type="navigateBack">返回</navigator>
+<!-- delta 返回几层 -->
+<navigator url="/pages/b/b" delta="1">跳到b</navigator>
+<button bind:tap="navigatorback">返回</button>

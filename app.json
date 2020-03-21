@@ -1,8 +1,13 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/a/a",
+    "pages/b/b"
   ],
+  "usingComponents": {
+    "my-cpn":"/components/my-cpn/my-cpn"
+  },
   "window": {
     "navigationBarBackgroundColor": "#ff5777",
     "navigationBarTextStyle": "white",
