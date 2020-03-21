@@ -8,7 +8,7 @@ Page({
     name:"accca",
     num:0
   },
-  _num(){
+  _num(){ 
     // wx.request({
     //   url:'http://hrtest2.dev.cn2.corp.agrant.cn/biztest/biz/api/loginCheck',
     //   method:'POST',
